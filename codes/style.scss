@@ -1,0 +1,239 @@
+@font-face {
+  font-family: "interFont";
+  src: url(../font/Inter-Light.otf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "interFont";
+  src: url(../font/Inter-Regular.otf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "interFont";
+  src: url(../font/Inter-Bold.otf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "interFont";
+  src: url(../font/Inter-ExtraBold.otf);
+  font-weight: 600;
+}
+
+$dark: #201a1c;
+$yellow: #fbbc23;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  // cursor: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+#container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+#sticky {
+  background-color: $yellow;
+  border-right: solid 4px $dark;
+  min-width: 7.3vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+
+  img {
+    width: 4.4vw;
+    position: absolute;
+    top: 3.9vh;
+    left: 1.4vw;
+    z-index: 1;
+  }
+}
+
+.hero {
+  background: $yellow;
+  border: solid 2px $yellow;
+
+  img {
+    width: 19%;
+    bottom: -1px;
+    left: 15%;
+    position: absolute;
+    color: $dark;
+  }
+
+  h1 {
+    font-family: InterFont;
+    font-weight: 600;
+    font-size: 7vw;
+    color: $dark;
+    position: absolute;
+    top: 20vh;
+    left: 40vw;
+    line-height: 80%;
+  }
+
+  h3 {
+    font-family: InterFont;
+    font-weight: 300;
+    position: absolute;
+    font-size: 2rem;
+    top: 11vh;
+    left: 40.4vw;
+    background-color: $dark;
+    color: white;
+    padding: 0.2em;
+  }
+
+  h4 {
+    font-family: InterFont;
+    font-weight: 400;
+    font-size: 1vw;
+    color: #7a5b11;
+    position: absolute;
+    top: 83vh;
+    left: 40.4vw;
+  }
+}
+
+.section {
+  background: $yellow;
+  display: flex;
+  flex-wrap: wrap;
+  border: solid 2px $yellow;
+}
+
+.info1 {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  width: 80vw;
+  position: absolute;
+  top: 5vh;
+  left: 115vw;
+
+  h1 {
+    font-family: InterFont;
+    font-size: 5vw;
+    color: white;
+    background: $dark;
+    letter-spacing: 2rem;
+  }
+
+  p {
+    font-family: InterFont;
+    font-size: 2vw;
+    margin-top: 1rem;
+    font-weight: 300;
+    line-height: 4rem;
+  }
+}
+
+.info2 {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  width: 80vw;
+  position: absolute;
+  top: 42vh;
+  left: 115vw;
+
+  h1 {
+    font-family: InterFont;
+    font-size: 5vw;
+    color: white;
+    background: $dark;
+    letter-spacing: 3rem;
+    padding: 1rem;
+  }
+
+  p {
+    font-family: InterFont;
+    font-size: 2vw;
+    margin-top: 1rem;
+    font-weight: 300;
+    line-height: 4rem;
+  }
+}
+
+.section2 {
+  background: $yellow;
+}
+
+.panel {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-shrink: 0;
+  border: red solid 1px;
+}
+
+progress {
+  position: fixed;
+  bottom: 0vh;
+  left: 7vw;
+  width: 94vw;
+  height: 1.5vh;
+  z-index: 100;
+  appearance: none;
+  border: none;
+  background: transparent;
+}
+
+progress::-webkit-progress-bar {
+  background: transparent;
+}
+
+progress::-webkit-progress-value {
+  background: $dark;
+  background-attachment: fixed;
+  border-radius: 10px;
+}
+
+progress::-moz-progress-bar {
+  background: $dark;
+  background-attachment: fixed;
+}
+
+.text {
+  white-space: pre;
+  font-family: InterFont;
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+// .overlay1 {
+//   line-height: 6rem;
+
+// .below1 {
+//   line-height: 6rem;
+// }
+
+// .overlay2 {
+//   line-height: 6rem;
+// }
+
+// .below2 {
+//   line-height: 6rem;
+// }
+
+// .overlay3 {
+//   line-height: 10rem;
+// }
+
+// .below3 {
+//   line-height:  10rem ;
+// }

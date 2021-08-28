@@ -1,4 +1,5 @@
 
+
 const tl = gsap.timeline();
 tl.to(".section", 5, { xPercent: -100 });
 tl.to(".section2", 5, { xPercent: -200 });
@@ -27,8 +28,8 @@ gsap.to("progress", {
 
 let scrollAnimation = gsap.timeline()
 
-scrollAnimation.fromTo('.mainText',{x:0, autoAlpha:1 },{x:'1000', autoAlpha:0, duration:1});
-scrollAnimation.fromTo('.headText', {y:0, autoAlpha:1}, {y:'-500', autoAlpha:0, duration:1});
+scrollAnimation.fromTo('.mainText',{x:0, autoAlpha:1 },{x:'1000', autoAlpha:0, duration:1},);
+scrollAnimation.fromTo('.headText', {y:0, autoAlpha:1}, {y:'-500', autoAlpha:0, duration:1},'.2');
 scrollAnimation.fromTo('.bottomText', {y:0, autoAlpha:1}, {y:'500', autoAlpha:0, duration:1},'<');
 scrollAnimation.fromTo('#mainLogo', {y:0,}, {y:'900',  duration:1});
 
@@ -36,7 +37,7 @@ scrollAnimation.fromTo('#mainLogo', {y:0,}, {y:'900',  duration:1});
 ScrollTrigger.create({
   trigger:'.hero',
   start:'70% 50%',
-  end:'180% 50%',
+  end:'165% 50%',
   animation: scrollAnimation,
   scrub:1,
   markers: true,
@@ -48,8 +49,8 @@ ScrollTrigger.create({
 //INITIAL HERO PAGE ANIMATION
 let initialAnimation = gsap.timeline()
 initialAnimation.fromTo('#mainLogo', {y:'900',}, {y:0,  duration:1, ease:Power4.easeOut});
-initialAnimation.fromTo('.mainText',{x:'1000', autoAlpha:0 },{x:0, autoAlpha:1, duration:1, ease: Power4.easeOut,});
-initialAnimation.fromTo('.headText', {y:'-500', autoAlpha:0}, {y:0, autoAlpha:1, duration:1, ease:Power4.easeOut});
+initialAnimation.fromTo('.mainText',{x:'1000', autoAlpha:0 },{x:0, autoAlpha:1, duration:1, ease: Power4.easeOut},'.3');
+initialAnimation.fromTo('.headText', {y:'-500', autoAlpha:0}, {y:0, autoAlpha:1, duration:1, ease:Power4.easeOut},'.5');
 initialAnimation.fromTo('.bottomText', {y:'500', autoAlpha:0}, {y:0, autoAlpha:1, duration:1, ease:Power4.easeOut},'<');
 
 
@@ -62,6 +63,8 @@ ScrollTrigger.create({
   animation: initialAnimation,
   toggleActions: 'play none none none',
 });
+
+
 
 
 

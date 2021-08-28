@@ -84,7 +84,7 @@ $yellow: #fbbc23;
     line-height: 80%;
   }
 
-  h3 {
+  .headText {
     font-family: InterFont;
     font-weight: 300;
     position: absolute;
@@ -109,68 +109,63 @@ $yellow: #fbbc23;
 
 .section {
   background: $yellow;
-  display: flex;
-  flex-wrap: wrap;
+  text-align: center;
   border: solid 2px $yellow;
+  font-family: InterFont;
 }
 
 .info1 {
-  text-align: center;
-  align-items: center;
-  justify-content: center;
   padding: 1rem;
   width: 80vw;
-  position: absolute;
-  top: 5vh;
-  left: 115vw;
-
-  h1 {
-    font-family: InterFont;
-    font-size: 5vw;
-    color: white;
-    background: $dark;
-    letter-spacing: 2rem;
-  }
-
-  p {
-    font-family: InterFont;
-    font-size: 2vw;
-    margin-top: 1rem;
-    font-weight: 300;
-    line-height: 4rem;
-  }
 }
 
-.info2 {
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  width: 80vw;
-  position: absolute;
-  top: 42vh;
-  left: 115vw;
+//   h1 {
+//     font-family: InterFont;
+//     font-size: 5vw;
+//     color: white;
+//     background: $dark;
+//     letter-spacing: 2rem;
+//   }
 
-  h1 {
-    font-family: InterFont;
-    font-size: 5vw;
-    color: white;
-    background: $dark;
-    letter-spacing: 3rem;
-    padding: 1rem;
-  }
+//   p {
+//     font-family: InterFont;
+//     font-size: 2vw;
+//     margin-top: 1rem;
+//     font-weight: 300;
+//     line-height: 4rem;
+//   }
+// }
 
-  p {
-    font-family: InterFont;
-    font-size: 2vw;
-    margin-top: 1rem;
-    font-weight: 300;
-    line-height: 4rem;
-  }
-}
+// .info2 {
+//   text-align: center;
+//   align-items: center;
+//   justify-content: center;
+//   padding: 1rem;
+//   width: 80vw;
+//   position: absolute;
+//   top: 42vh;
+//   left: 115vw;
+
+//   h1 {
+//     font-family: InterFont;
+//     font-size: 5vw;
+//     color: white;
+//     background: $dark;
+//     letter-spacing: 3rem;
+//     padding: 1rem;
+//   }
+
+//   p {
+//     font-family: InterFont;
+//     font-size: 2vw;
+//     margin-top: 1rem;
+//     font-weight: 300;
+//     line-height: 4rem;
+//   }
+// }
 
 .section2 {
-  background: $yellow;
+  background: red;
 }
 
 .panel {
@@ -207,33 +202,3 @@ progress::-moz-progress-bar {
   background: $dark;
   background-attachment: fixed;
 }
-
-.text {
-  white-space: pre;
-  font-family: InterFont;
-  font-weight: 500;
-  font-size: 3rem;
-}
-
-// .overlay1 {
-//   line-height: 6rem;
-
-// .below1 {
-//   line-height: 6rem;
-// }
-
-// .overlay2 {
-//   line-height: 6rem;
-// }
-
-// .below2 {
-//   line-height: 6rem;
-// }
-
-// .overlay3 {
-//   line-height: 10rem;
-// }
-
-// .below3 {
-//   line-height:  10rem ;
-// }
